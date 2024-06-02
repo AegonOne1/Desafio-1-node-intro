@@ -1,4 +1,4 @@
-
+// registro primero comprobar si existe algo en el archivo guardarlo y escribir en el
 const fs = require('fs');
 
 const registrar = (nombre, edad, animal, color, enfermedad) => {
@@ -11,7 +11,7 @@ const registrar = (nombre, edad, animal, color, enfermedad) => {
 
     citas.push(nuevoRegistro);
 
-    fs.writeFileSync('./citas.json', JSON.stringify(citas, null, 2));
+    fs.writeFileSync('./citas.json', JSON.stringify(citas, 2));
     console.log(nuevoRegistro);
 }
 
